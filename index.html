@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+
+    <title>Covid Vaccine Utility</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script>window.$ = window.jQuery = require('jquery');</script>
+    <script>require('@popperjs/core');</script>
+    <script>require('bootstrap');</script>
+    <script>window.axios = require('axios');</script>
+</head>
+
+<body class="container bg-dark">
+    <div class="card mt-5">
+        <div class="card-header">
+            <h3 class="card-title">Verify Mobile Number</h3>
+        </div>
+        <div class="card-body">
+            <div class="row mb-2">
+                <div class="col-4 text-end pt-1">
+                    Phone Number :
+                </div>
+                <div class="col-4">
+                    <input type="text" id="phone" class="form-control" placeholder="10 digit number">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 offset-4">
+                    <button class="btn btn-primary" id="phone-submit">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

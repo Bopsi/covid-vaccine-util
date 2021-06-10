@@ -1,0 +1,21 @@
+{
+  "name": "covid-vaccine-util",
+  "version": "1.0.0",
+  "description": "Covid vaccine slot booking and notifiation in India",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bappaditya Sasmal",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.0.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.1",
+    "jquery": "^3.6.0"
+  }
+}
